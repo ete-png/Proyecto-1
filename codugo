@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Creativa - Diseño y Marketing Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reseteo general */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Estilo de navegación */
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        .navbar a:hover {
+            color: #f39c12;
+        }
+
+        /* Encabezado principal */
+        .hero {
+            height: 80vh;
+            background: url('https://source.unsplash.com/1600x900/?creative,agency') no-repeat center center/cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-btn {
+            padding: 0.75rem 2rem;
+            background: #f39c12;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: #e67e22;
+        }
+
+        /* Sección sobre nosotros */
+        .about {
+            padding: 3rem 1rem;
+            text-align: center;
+            background: #f4f4f4;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
+
+        /* Servicios */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 2rem 1rem;
+            justify-content: center;
+            background: #fff;
+        }
+
+        .service {
+            flex: 1 1 250px;
+            padding: 2rem;
+            background: #222;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+        }
+
+        .service h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 1rem;
+            background: #222;
+            color: #ddd;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        .social-icons a {
+            color: #ddd;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #f39c12;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header y navegación -->
+    <header>
+        <div class="navbar">
+            <h1>Agencia Creativa</h1>
+            <nav>
+                <a href="#about">Sobre Nosotros</a>
+                <a href="#services">Servicios</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección principal -->
+    <section class="hero">
+        <div>
+            <h1>Impulsa tu negocio con creatividad</h1>
+            <p>Transformamos tus ideas en experiencias digitales impactantes.</p>
+            <a href="#contact" class="cta-btn">Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- Sección sobre nosotros -->
+    <section id="about" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una agencia de diseño y marketing digital con pasión por la innovación y la creatividad. Nuestro equipo de expertos trabaja para crear soluciones personalizadas que se adapten a las necesidades de cada cliente.</p>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services" class="services">
+        <div class="service">
+            <h3>Diseño Web</h3>
+            <p>Creación de sitios web atractivos y funcionales para potenciar tu presencia en línea.</p>
+        </div>
+        <div class="service">
+            <h3>Marketing Digital</h3>
+            <p>Estrategias digitales efectivas para aumentar la visibilidad y el alcance de tu marca.</p>
+        </div>
+        <div class="service">
+            <h3>SEO</h3>
+            <p>Optimización de motores de búsqueda para mejorar el posicionamiento de tu sitio.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Agencia Creativa. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Enlace a Font Awesome para los iconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
